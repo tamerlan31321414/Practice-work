@@ -1,0 +1,61 @@
+/* ==========================
+   ABOUT SECTION
+========================== */
+
+.about {
+    padding: 100px 0;
+    background: var(--section-background);
+}
+
+.section-header {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 60px;
+}
+
+.section-subtitle {
+    display: inline-block;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.section-description {
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    align-items: center;
+}
+
+.about-text h3 {
+    font-family: var(--font-heading);
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.about-text p {
+    margin-bottom: 18px;
+    line-height: 1.8;
+    color: var(--text-light);
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    display: block;
+}
