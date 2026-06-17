@@ -59,3 +59,47 @@
     box-shadow: var(--box-shadow);
     display: block;
 }
+/* ==========================================
+   Responsive - About Section
+========================================== */
+
+@media (max-width:992px){
+
+    .about-content{
+        grid-template-columns:1fr;
+        gap:50px;
+    }
+
+    .about-text{
+        text-align:center;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .about{
+        padding:70px 0;
+    }
+
+    .section-title{
+        font-size:2rem;
+    }
+
+    .section-subtitle{
+        font-size:1rem;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .section-title{
+        font-size:1.7rem;
+    }
+
+    .about{
+        padding:60px 0;
+    }
+
+}
