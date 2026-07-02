@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IT Processes & Functionalities</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/navbar.css" />
+  <link rel="stylesheet" href="assets/css/hero.css" />
+  <link rel="stylesheet" href="assets/css/sections.css" />
+  <link rel="stylesheet" href="assets/css/contact.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <img src="assets/images/company-logo.png" alt="IT P&F Logo" class="nav-logo-img"
+             onerror="this.style.display='none'; document.getElementById('logoText').style.display='flex';" />
+        <span class="logo-text-fallback" id="logoText" style="display:none;">
+          <div class="logo-icon">⬡</div>
+          <span>IT P&F</span>
+        </span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home"     data-i18n="nav_home">Home</a></li>
+        <li><a href="#about"    data-i18n="nav_about">About</a></li>
+        <li><a href="#services" data-i18n="nav_services">Services</a></li>
+        <li><a href="#contact"  data-i18n="nav_contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="ru">RU</button>
+          <button class="lang-btn" data-lang="kz">ҚЗ</button>
+        </div>
+        <button class="burger" id="burger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <div class="hero-tag" data-i18n="hero_tag">IT Solutions & Process Automation</div>
+      <h1 class="hero-title">
+        <span data-i18n="hero_title1">We Build</span><br/>
+        <span class="hero-accent" data-i18n="hero_title2">IT Systems</span><br/>
+        <span data-i18n="hero_title3">That Work</span>
+      </h1>
+      <p class="hero-sub" data-i18n="hero_sub">
+        Streamlining business processes through smart technology, automation, and reliable IT infrastructure.
+      </p>
+      <div class="hero-cta-group">
+        <a href="#services" class="btn-primary" data-i18n="hero_cta1">Our Services</a>
+        <a href="#contact"  class="btn-outline"  data-i18n="hero_cta2">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="floating-card card1"><span class="card-icon">⚙️</span><span data-i18n="card1">Process Automation</span></div>
+      <div class="floating-card card2"><span class="card-icon">🔒</span><span data-i18n="card2">Cybersecurity</span></div>
+      <div class="floating-card card3"><span class="card-icon">📊</span><span data-i18n="card3">Data Analytics</span></div>
+      <div class="floating-card card4"><span class="card-icon">☁️</span><span data-i18n="card4">Cloud Solutions</span></div>
+    </div>
+  </section>
+
+  <!-- ========== STATS ========== -->
+  <section class="stats-bar">
+    <div class="stats-container">
+      <div class="stat-item">
+        <span class="stat-num">150+</span>
+        <span class="stat-label" data-i18n="stat1">Projects Delivered</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num">8+</span>
+        <span class="stat-label" data-i18n="stat2">Years Experience</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num">50+</span>
+        <span class="stat-label" data-i18n="stat3">Enterprise Clients</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num">99%</span>
+        <span class="stat-label" data-i18n="stat4">Uptime SLA</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about" id="about">
+    <div class="section-container">
+      <div class="about-text">
+        <div class="section-eyebrow" data-i18n="about_eyebrow">WHO WE ARE</div>
+        <h2 class="section-title" data-i18n="about_title">IT Processes & Functionalities</h2>
+        <p data-i18n="about_p1">We are a full-service IT company specializing in the design, implementation, and management of business process automation systems, enterprise software, and digital infrastructure.</p>
+        <p data-i18n="about_p2">From small business digitization to large-scale enterprise transformation, we deliver robust, scalable solutions tailored to your operational needs.</p>
+        <div class="about-features">
+          <div class="feature-row"><div class="feature-dot"></div><span data-i18n="feat1">ISO-certified development processes</span></div>
+          <div class="feature-row"><div class="feature-dot"></div><span data-i18n="feat2">Dedicated support teams 24/7</span></div>
+          <div class="feature-row"><div class="feature-dot"></div><span data-i18n="feat3">Agile project delivery methodology</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="services" id="services">
+    <div class="services-inner">
+      <div class="section-eyebrow center" data-i18n="services_eyebrow">WHAT WE DO</div>
+      <h2 class="section-title center" data-i18n="services_title">Our Core Services</h2>
+      <p class="section-sub center" data-i18n="services_sub">We cover the full spectrum of IT needs — from infrastructure to software, from security to support.</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon-wrap"><span class="service-icon">⚙️</span></div>
+          <h3 data-i18n="srv1_title">Business Process Automation</h3>
+          <p data-i18n="srv1_desc">We analyze your workflows and implement smart automation solutions using RPA, custom software, and API integrations to save time and reduce human error.</p>
+          <a href="#contact" class="service-link" data-i18n="srv_link">Learn more →</a>
+        </div>
+        <div class="service-card featured">
+          <div class="service-icon-wrap"><span class="service-icon">🌐</span></div>
+          <h3 data-i18n="srv2_title">IT Infrastructure Management</h3>
+          <p data-i18n="srv2_desc">Design, deployment, and maintenance of reliable network, server, and cloud infrastructure with proactive monitoring and guaranteed uptime.</p>
+          <a href="#contact" class="service-link" data-i18n="srv_link">Learn more →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-wrap"><span class="service-icon">🔒</span></div>
+          <h3 data-i18n="srv3_title">Cybersecurity & Compliance</h3>
+          <p data-i18n="srv3_desc">End-to-end security audits, penetration testing, incident response planning, and regulatory compliance consulting for your digital assets.</p>
+          <a href="#contact" class="service-link" data-i18n="srv_link">Learn more →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-wrap"><span class="service-icon">💻</span></div>
+          <h3 data-i18n="srv4_title">Custom Software Development</h3>
+          <p data-i18n="srv4_desc">Web applications, mobile apps, ERP and CRM systems built to your exact specifications using modern development practices and scalable architecture.</p>
+          <a href="#contact" class="service-link" data-i18n="srv_link">Learn more →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-wrap"><span class="service-icon">📊</span></div>
+          <h3 data-i18n="srv5_title">Data Analytics & BI</h3>
+          <p data-i18n="srv5_desc">Transform raw data into actionable business insights through dashboards, automated reports, and predictive analytics platforms.</p>
+          <a href="#contact" class="service-link" data-i18n="srv_link">Learn more →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-wrap"><span class="service-icon">🛠️</span></div>
+          <h3 data-i18n="srv6_title">IT Support & Helpdesk</h3>
+          <p data-i18n="srv6_desc">Tier-1 through Tier-3 IT support with fast response times, remote and on-site assistance, and comprehensive ticketing system management.</p>
+          <a href="#contact" class="service-link" data-i18n="srv_link">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="faq-section">
+    <div class="faq-inner">
+      <div class="section-eyebrow center" data-i18n="faq_eyebrow">FAQ</div>
+      <h2 class="section-title center" data-i18n="faq_title">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFAQ(this)">
+            <span data-i18n="faq1_q">How long does a typical IT project take?</span>
+            <span class="faq-arrow">▾</span>
+          </button>
+          <div class="faq-a"><p data-i18n="faq1_a">Project timelines vary based on scope. A simple automation solution takes 2–4 weeks; a full ERP implementation can take 3–6 months.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFAQ(this)">
+            <span data-i18n="faq2_q">Do you provide post-launch support?</span>
+            <span class="faq-arrow">▾</span>
+          </button>
+          <div class="faq-a"><p data-i18n="faq2_a">Yes. All our solutions come with a standard 3-month warranty period and optional long-term support contracts with guaranteed SLA response times.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFAQ(this)">
+            <span data-i18n="faq3_q">Can you work with our existing IT team?</span>
+            <span class="faq-arrow">▾</span>
+          </button>
+          <div class="faq-a"><p data-i18n="faq3_a">Absolutely. We regularly collaborate with in-house IT departments, acting as a technology partner for specific projects or providing overflow capacity during peak periods.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFAQ(this)">
+            <span data-i18n="faq4_q">Which industries do you serve?</span>
+            <span class="faq-arrow">▾</span>
+          </button>
+          <div class="faq-a"><p data-i18n="faq4_a">We serve clients across finance, healthcare, logistics, retail, manufacturing, and the public sector. Our solutions are adaptable to any industry vertical.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact-section" id="contact">
+    <div class="contact-inner">
+      <div class="contact-info">
+        <div class="section-eyebrow" data-i18n="contact_eyebrow">GET IN TOUCH</div>
+        <h2 class="section-title" data-i18n="contact_title">Let's Start Your Project</h2>
+        <p data-i18n="contact_sub">Tell us about your challenge. We'll get back to you within one business day with a plan.</p>
+        <div class="contact-details">
+          <div class="contact-row"><span class="c-icon">📍</span><span data-i18n="contact_address">Astana, Kazakhstan, Mangilik El Ave 55/11</span></div>
+          <div class="contact-row"><span class="c-icon">📞</span><span>+7 (717) 200-00-00</span></div>
+          <div class="contact-row"><span class="c-icon">✉️</span><span>info@itpf.kz</span></div>
+        </div>
+      </div>
+
+      <!-- FORM — submissions go to Formspree (replace YOUR_FORM_ID) -->
+      <form class="contact-form" id="contactForm"
+            action="https://formspree.io/f/mbdvygqb"
+            method="POST"
+            onsubmit="handleSubmit(event)">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label data-i18n="form_name">Full Name</label>
+            <input type="text" name="name" id="fname" placeholder="John Smith" required />
+          </div>
+          <div class="form-group">
+            <label data-i18n="form_email">Email Address</label>
+            <input type="email" name="email" id="femail" placeholder="john@company.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label data-i18n="form_company">Company</label>
+          <input type="text" name="company" id="fcompany" placeholder="Your Company Ltd." />
+        </div>
+        <div class="form-group">
+          <label data-i18n="form_service">Service of Interest</label>
+          <select name="service" id="fservice">
+            <option value="" data-i18n="form_select">— Select a service —</option>
+            <option value="automation"    data-i18n="srv1_title">Business Process Automation</option>
+            <option value="infra"         data-i18n="srv2_title">IT Infrastructure Management</option>
+            <option value="security"      data-i18n="srv3_title">Cybersecurity & Compliance</option>
+            <option value="software"      data-i18n="srv4_title">Custom Software Development</option>
+            <option value="analytics"     data-i18n="srv5_title">Data Analytics & BI</option>
+            <option value="support"       data-i18n="srv6_title">IT Support & Helpdesk</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label data-i18n="form_msg">Message</label>
+          <textarea name="message" id="fmessage" rows="4" placeholder="Describe your project or question..." required></textarea>
+        </div>
+
+        <!-- Hidden field so you know which page sent the message -->
+        <input type="hidden" name="_subject" value="New message from IT P&F website" />
+        <input type="hidden" name="_replyto" id="replyTo" />
+
+        <button type="submit" class="btn-primary full-w" id="submitBtn" data-i18n="form_submit">Send Message</button>
+
+        <div class="form-success" id="formSuccess">
+          <span data-i18n="form_success">✅ Thank you! We'll be in touch shortly.</span>
+        </div>
+        <div class="form-error" id="formError">
+          <span data-i18n="form_error">❌ Something went wrong. Please try again or email us directly.</span>
+        </div>
+
+        <!-- SETUP INSTRUCTIONS (visible only in dev) -->
+        <div class="form-setup-note" id="setupNote">
+          ℹ️ <strong>Setup:</strong> Replace <code>YOUR_FORM_ID</code> in <code>index.html</code> with your
+          <a href="https://formspree.io" target="_blank">Formspree</a> form ID to receive emails.
+          Free plan: 50 submissions/month.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="assets/images/company-logo.png" alt="Logo" class="footer-logo"
+             onerror="this.style.display='none'; document.getElementById('footerLogoFallback').style.display='flex';" />
+        <div class="footer-logo-fallback" id="footerLogoFallback" style="display:none;">
+          <div class="logo-icon">⬡</div><span class="logo-text-f">IT P&F</span>
+        </div>
+        <p data-i18n="footer_tagline">Building the digital backbone of your business.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <strong data-i18n="footer_company">Company</strong>
+          <a href="#about"    data-i18n="nav_about">About</a>
+          <a href="#services" data-i18n="nav_services">Services</a>
+          <a href="#contact"  data-i18n="nav_contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <strong data-i18n="footer_services">Services</strong>
+          <a href="#services" data-i18n="srv1_title">Process Automation</a>
+          <a href="#services" data-i18n="srv3_title">Cybersecurity</a>
+          <a href="#services" data-i18n="srv4_title">Software Dev</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 IT Processes & Functionalities. <span data-i18n="footer_rights">All rights reserved.</span></span>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/faq.js"></script>
+  <script src="assets/js/form.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
